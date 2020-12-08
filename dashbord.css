@@ -25,7 +25,7 @@ li{
     
    
 }
-/* right navbar */
+/* left navbar */
 .logo_light{
     /* position: fixed; */
     box-sizing: border-box;
@@ -121,7 +121,7 @@ li{
     width: 15rem;
 }
 
-/* left navbar */
+/* right navbar */
 .modal-box{
     position: absolute;
     right: 0;
@@ -253,7 +253,7 @@ animation: shacke .5s ease-in-out infinite;
   display: block;
 }
 .sidebar-popup:hover .sidebar-popup-items{
-display:block;
+  display:block;
 }
 
 .icon-header{
