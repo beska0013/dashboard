@@ -8,30 +8,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./dashbord.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
-        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
     <title>Document</title>
 </head>
 
 <body>
     <!-- navbar -->
     <header>
-        <!-- navbar right -->
+        <!-- navbar left -->
         <div class="custom-navbar">
             <div class="custom-nav_menu">
-                <div class="logo_light">
-                    <img src="https://themesbrand.com/skote/layouts/vertical/assets/images/logo-light.svg" alt="">
-                </div>
-                <button type="button" class="custom-btn"><i class="fas fa-bars"></i></button>
 
-                <form class="search-form">
+                <div id="mainLogo" class="logo_light"></div>
+                <div id="secondaryLogo" class="logo_dark"></div>
+
+                <div id="switchSidebar" class="custom-btn bx bx-menu ml-1 mr-2"></div>
+                <form class="search-form ml-1 mr-2">
                     <i class="fas fa-search"></i>
                     <input class="mr-2" type="search " name="" placeholder="Search">
                 </form>
 
                 <div class="custom-dropdown">
-                    <div id="megaBtn" class="custom-btn">
-                         Mega Menu <i class="fas fa-chevron-down"></i>
+                    <div id="megaBtn" class="custom-btn arrow-down ml-1 mr-2">
+                        Mega Menu
                     </div>
                     <div id="megaMenu" class="mega-menu">
                         <div class="container">
@@ -88,15 +87,13 @@
                 </div>
             </div>
 
-            <!-- navbar left -->
+            <!-- navbar right -->
             <div class="custom-nav_menu" style="margin-right: 1rem;">
 
                 <div class="custom-dropdown">
-                    <div id="modalBtn" class="custom-btn">
-                        <img  src="./images/us.jpg"  class="flag_img" alt="us_flag_log">
-                    </div>
+                    <div id="modalBtn" class="custom-btn flag_img mr-4"></div>
 
-                    <div id="modal" class="modal-box modal-box-position">
+                    <div id="modal" class="modal-box p-2 ">
                         <ul>
                             <li><img src="./images/us.jpg" class="flag_img" alt="us_flag_log"> English</li>
                             <li><img src="./images/spain.jpg" class="flag_img" alt=""> Spanish</li>
@@ -108,386 +105,500 @@
                 </div>
 
                 <div class="custom-dropdown">
-                    <div  id="modalBtn2" class="custom-btn">
-                        <i class='bx bx-customize'></i>
+                    <div id="modalBtn2" class="custom-btn bx bx-customize mr-4">
                     </div>
-                    <div  id="modal2" class="modal-box">
-                        <div class="modal-box-icon">
-                            <img src="./images/github.png" alt="">
-                            <p>GitHub</p>
-                        </div>
-                        <div class="modal-box-icon">
-                            <img src="./images/bitbucket.png" alt="">
-                            <p>Bitbucket</p>
-                        </div>
-                        <div class="modal-box-icon">
-                            <img src="./images/dribbble.png" alt="">
-                            <p>Dribbble</p>
-                        </div>
-                        <div class="modal-box-icon">
-                            <img src="./images/dropbox.png" alt="">
-                            <p>Dropbox</p>
-                        </div>
-                        <div class="modal-box-icon">
-                            <img src="./images/mail_chimp.png" alt="">
-                            <p>Mail Chimp</p>
-                        </div>
-                        <div class="modal-box-icon">
-                            <img src="./images/slack.png" alt="">
-                            <p>Slack</p>
+                    <div id="modal2" class="modal-box">
+                        <div class="modal-box-content">
+                            <div class="modal-box-icon">
+                                <img src="./images/github.png" alt="">
+                                <p>GitHub</p>
+                            </div>
+                            <div class="modal-box-icon">
+                                <img src="./images/bitbucket.png" alt="">
+                                <p>Bitbucket</p>
+                            </div>
+                            <div class="modal-box-icon">
+                                <img src="./images/dribbble.png" alt="">
+                                <p>Dribbble</p>
+                            </div>
+                            <div class="modal-box-icon">
+                                <img src="./images/dropbox.png" alt="">
+                                <p>Dropbox</p>
+                            </div>
+                            <div class="modal-box-icon">
+                                <img src="./images/mail_chimp.png" alt="">
+                                <p>Mail Chimp</p>
+                            </div>
+                            <div class="modal-box-icon">
+                                <img src="./images/slack.png" alt="">
+                                <p>Slack</p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div class="custom-btn"><i class='bx bx-fullscreen mr-4' style='color:#6a7187'></i></div>
+                <div class="custom-dropdown">
+                    <div id="modalBtn3" class="custom-btn bx bx-bell bx-tada mr-4"></div>
 
-                <div class="custom-btn"><i class='bx bx-fullscreen' style='color:#6a7187'></i></div>
-
-                <div class="dropdown" style="height: 100%;">
-                    <div class="custom-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        <i class='bx bx-bell animation_shacke' style='color:#6a7187'></i>
-                        <span class="badge">3</span>
-                    </div>
-                    <div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left p-0"
-                        aria-labelledby="dropdownMenuButton">
-                        <div class="modal_box">
+                    <div id="modal3" class="modal-box">
+                        <header>
                             <h6 class="m-0">Notifications</h6>
                             <a href="">View All</a>
-                        </div>
+                        </header>
+
+                        <section>
+                            <div class="box-content">
+                                <div class="modal-box-content2">
+                                    <div class="avatar-img bg-primary"><i class='bx bx-cart' style='color:#f7f4f4'></i>
+                                    </div>
+                                    <div class="news">
+                                        <h5 class="mb-1">Your order is placed</h5>
+                                        <p class="mb-1">If several laguages coalesce the grammar
+
+                                        </p>
+                                        <time><i class='bx bx-time-five'></i> 3 min ago</time>
+                                    </div>
+                                </div>
+                                <div class="modal-box-content2">
+                                    <img src="./images/avatar-3.jpg" class="avatar-img" alt="avatar1">
+                                    <div class="news">
+                                        <h5 class="mb-1">James Lemire</h5>
+                                        <p class="mb-1">
+                                            It will seem like simplified English.
+                                        </p>
+                                        <time><i class='bx bx-time-five'></i> 1 hours ago</time>
+                                    </div>
+                                </div>
+                                <div class="modal-box-content2">
+                                    <div class="avatar-img bg-success"><i class='bx bx-badge-check'
+                                            style='color:#f7f4f4'></i></div>
+                                    <div class="news">
+                                        <h5 class="mb-1">Your item is shipped</h5>
+                                        <p class="mb-1">
+                                            If several laguages coalesce the grammar
+                                        </p>
+                                        <time><i class='bx bx-time-five'></i> 3 min ago</time>
+                                    </div>
+                                </div>
+                                <div class="modal-box-content2">
+                                    <img src="./images/avatar-4.jpg" class="avatar-img" alt="avatar1">
+                                    <div class="news">
+                                        <h5 class="mb-1">Selena Layfield</h5>
+                                        <p class="mb-1">
+                                            As askeptical Cambridge frien of mine accidental
+                                        </p>
+                                        <time><i class='bx bx-time-five'></i> 3 min ago</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <footer>
+                            <i class='bx bxs-right-arrow-circle'></i>
+                            <span>View More...</span>
+                        </footer>
                     </div>
                 </div>
+                <span class="custom-badge custom-badge-danger">3</span>
+                <div class="custom-dropdown">
+                    <div id="modalBtn4" class="custom-btn arrow-down mr-4">
+                        <img src="./images/avatar-1.jpg" class="avatar-img" alt="avatar1">
+                        Henry
+                    </div>
+                    <div id="modal4" class="modal-box p-2 ">
+                        <ul>
+                            <li><i class='bx bx-user'></i> Profile</li>
+                            <li><i class='bx bx-wallet'></i> My Wallet</li>
+                            <li><i class='bx bx-wrench'></i> Setings <span
+                                    class="custom-badge custom-badge-success ml-2">11</span></li>
+                            <li><i class='bx bx-lock-open'></i> Lock Screen</li>
+                            <li class="logout pt-1"><i class='bx bx-power-off'></i> LogOut</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="custom-header-modal-sidebar">
+                    <div type="button" class="custom-btn mr-1" id="headerModalSidebarBtn">
+                        <i class='bx bx-cog bx-spin bx-flip-vertical'></i>
+                    </div>
+                    <div class="header-modal-sidebar" id="headerModalSidebar">
+                        <div class="modal-sidebar">
+                            <header>
+                                <h5>Settings</h5>
+                                <span id="switchOff">+</span>
+                            </header>
+                            <section>
+                                <h6>Choose Layouts</h6>
+                                <div class="modal-sidebar-content">
+                                    <img src="./images/layout-1.jpg" alt="themes">
 
-                <button type="button" class="custom-btn">
-                    <img src="./images/avatar-1.jpg" class="avatar-img" alt="avatar1">
-                    Henry
-                    <i class="fas fa-chevron-down"></i>
-                </button>
-                <button type="button" class="custom-btn">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAC80lEQVRIS81WXU7bQBD+Jus8ww2anqDhBIUTECSCEEEivBOanqDJCeqSvDdIJEIYqeEEpSco3IDewH6O7almHcPacfyjCtF9srw78+3M9+3MEN5o0RvhojLw4WG/EVj+LofYlEtTDa7yrbvra/upShCVgNtH/SYo+AlEoMZywWrHmdkPZcGrAXd6cwC7Wc4ZfHk7HXdfC1gi+gDGL2c22haQ9lHvHoSPAD840/HWPwELj37NPxEnVmhdhpbfZKavABracSaw3nli4lPLt55M+yz+V1KtxaOC3waPbopTj4i7N1djSTsOjs9azDQBsJHg/EUHrgrUVhp8Bbi9nkePgYFfV5P5xJbLPK9Wt79pLYIuAYPUBaIzjLkzG+2ZNgng/eOzbWIS1ULEAsKEQhJnAFS/SLVa9QhsbV/jARhdAmnKmHjn9mp8H4MngI1ovUVdNdKRGan9BECLC8A9Ew9Np7HzJW0iSKHhzpmOWkXALjPbt7Px0EzPfudsEkeQVi8RDW+uLpbZiXYPjs8HzCyXlHe/HngplB/PTpm+ObOLvhFpvOcxWIuLQBKFFpaZzvbRuQ3SoBHNeamWAybP5i1f3is8sNqO+V5WM+FuI/HMDJGmQaMLZ6x2p8d600hf/C+rQpkUONOR9rlM8xf5jv+ZUP8PcIlUJxpCqnE8C8isB4WpriAuKSBaXABEXLpb5YmLiPfiarfCsSkgIrLXPA/NW4XnJK+i/Dte1NX7rAKiqZBqpjtS1DCkSuUUEF3306IsLplMUYSsPpcqmRRIF5O0D0uXTDHIaRIuiAcLy7rMahJ13z8B67qenk7EbaJqZb7jVH2VM1665RHxaaotfk+3TsPGU4FqFrZFQRLw0Ar1GFPzaxPf8hsU9dx3Ma+rE4je+cPEXRkETPtSg0CWYuN/7U4vZ/TBozMdNfPsCyvXOuMc/nX/fr1hLxpvo4aQXInGUSbqSuNtzL+vglaNSKs3ZHatQM1fdaAvE0nZM5UjLuu46NxfPZT0Lr27XiUAAAAASUVORK5CYII="
-                        class="animation_rotate" />
-                </button>
+                                    <input type="checkbox" id="switch">
+                                    <label class="turn-on-off-btn bg-primary" for="switch">
+                                        <span></span>
+                                    </label>
+
+                                    <img src="./images/layout-2.jpg" alt="themes">
+
+                                    <input type="checkbox" id="switchTwo">
+                                    <label class="turn-on-off-btn bg-primary" for="switchTwo">
+                                        <span></span>
+                                    </label>
+
+                                    <img src="./images/layout-3.jpg" alt="themes">
+
+                                    <input type="checkbox" id="switchThree">
+                                    <label class="turn-on-off-btn bg-primary" for="switchThree">
+                                        <span></span>
+                                    </label>
+
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </header>
-<!-- SIDEBAR -->
-    <div class="sidebar">
-        <div class="sidebar-items">
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-home-circle' style='color:#fff'></i></a>
-                    <span>Dashbord</span>
+    <section>
+    <!-- wrapper -->
+    <div class="wrapper">
+        
+        <!-- SIDEBAR -->
+        <div id="mainSidebar" class="sidebar">
+            <div class="sidebar-items">
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-home-circle' style='color:#fff'></i></a>
+                        <span>Dashbord</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Default</li>
+                            <li>Saas</li>
+                            <li>Crypto</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Default</li>
-                        <li>Saas</li>
-                        <li>Crypto</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-layout'></i></a>
-                    <span>Layouts</span>
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-layout'></i></a>
+                        <span>Layouts</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Horizontal</li>
+                            <li>Vertical</li>
+                            <li>Light Sidebar</li>
+                            <li>Compact Sidebar</li>
+                            <li>Ican Sidebar</li>
+                            <li>Boxed Width</li>
+                            <li>Preloader</li>
+                            <li>Colord Sidebar</li>
+                            <li>Scrollable</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Horizontal</li>
-                        <li>Vertical</li>
-                        <li>Light Sidebar</li>
-                        <li>Compact Sidebar</li>
-                        <li>Ican Sidebar</li>
-                        <li>Boxed Width</li>
-                        <li>Preloader</li>
-                        <li>Colord Sidebar</li>
-                        <li>Scrollable</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-calendar'></i></a>
-                    <span>Calendar</span>
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-calendar'></i></a>
+                        <span>Calendar</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-chat'></i></a>
-                    <span>Chat</span>
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-chat'></i></a>
+                        <span>Chat</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-store-alt'></i></a>
-                    <span>Ecommerce</span>
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-store-alt'></i></a>
+                        <span>Ecommerce</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Produsts</li>
+                            <li>Produsts Detail</li>
+                            <li>Order</li>
+                            <li>Customers</li>
+                            <li>Cart</li>
+                            <li>Chekout</li>
+                            <li>Shops</li>
+                            <li>Add Product</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Produsts</li>
-                        <li>Produsts Detail</li>
-                        <li>Order</li>
-                        <li>Customers</li>
-                        <li>Cart</li>
-                        <li>Chekout</li>
-                        <li>Shops</li>
-                        <li>Add Product</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-bitcoin'></i></a>
-                    <span>Crypto</span>
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-bitcoin'></i></a>
+                        <span>Crypto</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Wallet</li>
+                            <li>Buy/Sell</li>
+                            <li>Exchange</li>
+                            <li>Lending</li>
+                            <li>Orders</li>
+                            <li>KYC Application</li>
+                            <li>ICO Landing</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Wallet</li>
-                        <li>Buy/Sell</li>
-                        <li>Exchange</li>
-                        <li>Lending</li>
-                        <li>Orders</li>
-                        <li>KYC Application</li>
-                        <li>ICO Landing</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-envelope'></i></a>
-                    <span>Email</span>
-                </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Inbox</li>
-                        <li>Read Email</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-receipt'></i></a>
-                    <span>Invoices</span>
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-envelope'></i></a>
+                        <span>Email</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Inbox</li>
+                            <li>Read Email</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Invoices List</li>
-                        <li>Invoices Details</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-briefcase-alt-2'></i></a>
-                    <span>Projects</span>
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-receipt'></i></a>
+                        <span>Invoices</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Invoices List</li>
+                            <li>Invoices Details</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Projects Grid</li>
-                        <li>Projects list</li>
-                        <li>Projects Overview</li>
-                        <li>Create New</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-task'></i></a>
-                    <span>Tasks</span>
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-briefcase-alt-2'></i></a>
+                        <span>Projects</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Projects Grid</li>
+                            <li>Projects list</li>
+                            <li>Projects Overview</li>
+                            <li>Create New</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Task List</li>
-                        <li>Kanban Board</li>
-                        <li>Projects Overview</li>
-                        <li>Create Task</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bxs-user-detail'></i></a>
-                    <span>Contacts</span>
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-task'></i></a>
+                        <span>Tasks</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Task List</li>
+                            <li>Kanban Board</li>
+                            <li>Projects Overview</li>
+                            <li>Create Task</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>User Grid</li>
-                        <li>User List</li>
-                        <li>ProFile</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-user-circle'></i></a>
-                    <span>Authentication</span>
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bxs-user-detail'></i></a>
+                        <span>Contacts</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>User Grid</li>
+                            <li>User List</li>
+                            <li>ProFile</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Login</li>
-                        <li>Register</li>
-                        <li>Recover Password</li>
-                        <li>Lock Screen</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-file'></i></a>
-                    <span>Utility</span>
-                </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Starter Page</li>
-                        <li>Maintance</li>
-                        <li>Comming Soon</li>
-                        <li>FAQs</li>
-                        <li>Pricing</li>
-                        <li>Error 404</li>
-                        <li>Error 500</li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-tone'></i></a>
-                    <span>UI Elements</span>
-                </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Alerts</li>
-                        <li>Buttons</li>
-                        <li>Cards</li>
-                        <li>Carousel</li>
-                        <li>Dropdowns</li>
-                        <li>Grid</li>
-                        <li>Images</li>
-                        <li>Light Box</li>
-                        <li>Modals</li>
-                        <li>Range Slider</li>
-                        <li>Session Timeout</li>
-                        <li>Progress Bars</li>
-                        <li>Sweet-Alert</li>
-                        <li>Tabs & Accordions</li>
-                        <li>Typography</li>
-                        <li>Video</li>
-                        <li>General</li>
-                        <li>Colors</li>
-                        <li>Rating</li>
-                        <li>Notifications</li>
-                        <li>Image Cropper</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-eraser'></i></a>
-                    <span>Forms</span>
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-user-circle'></i></a>
+                        <span>Authentication</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Login</li>
+                            <li>Register</li>
+                            <li>Recover Password</li>
+                            <li>Lock Screen</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Forms Elements</li>
-                        <li>Forms Layouts</li>
-                        <li>Forms Validation</li>
-                        <li>Forms Advanced</li>
-                        <li>Forms Editors</li>
-                        <li>Forms File Upload</li>
-                        <li>Forms Xeditable</li>
-                        <li>Forms Repeater</li>
-                        <li>Forms Wizard</li>
-                        <li>Forms Mask</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-list-ul'></i></a>
-                    <span>Tables</span>
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-file'></i></a>
+                        <span>Utility</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Starter Page</li>
+                            <li>Maintance</li>
+                            <li>Comming Soon</li>
+                            <li>FAQs</li>
+                            <li>Pricing</li>
+                            <li>Error 404</li>
+                            <li>Error 500</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Basic Tables</li>
-                        <li>Data Tables</li>
-                        <li>Responsive Table</li>
-                        <li>Editable Table</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bxs-bar-chart-alt-2'></i></a>
-                    <span>Charts</span>
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-tone'></i></a>
+                        <span>UI Elements</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Alerts</li>
+                            <li>Buttons</li>
+                            <li>Cards</li>
+                            <li>Carousel</li>
+                            <li>Dropdowns</li>
+                            <li>Grid</li>
+                            <li>Images</li>
+                            <li>Light Box</li>
+                            <li>Modals</li>
+                            <li>Range Slider</li>
+                            <li>Session Timeout</li>
+                            <li>Progress Bars</li>
+                            <li>Sweet-Alert</li>
+                            <li>Tabs & Accordions</li>
+                            <li>Typography</li>
+                            <li>Video</li>
+                            <li>General</li>
+                            <li>Colors</li>
+                            <li>Rating</li>
+                            <li>Notifications</li>
+                            <li>Image Cropper</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Apex Charts</li>
-                        <li>E Charts</li>
-                        <li>Chartjs Chart</li>
-                        <li>Flot Chart</li>
-                        <li>Toast UI Chart</li>
-                        <li>Jquery Knob Chart</li>
-                        <li>Sparkline Chart</li>
-                    </ul>
+
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-eraser'></i></a>
+                        <span>Forms</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Forms Elements</li>
+                            <li>Forms Layouts</li>
+                            <li>Forms Validation</li>
+                            <li>Forms Advanced</li>
+                            <li>Forms Editors</li>
+                            <li>Forms File Upload</li>
+                            <li>Forms Xeditable</li>
+                            <li>Forms Repeater</li>
+                            <li>Forms Wizard</li>
+                            <li>Forms Mask</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-aperture'></i></a>
-                    <span>Icons</span>
+
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-list-ul'></i></a>
+                        <span>Tables</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Basic Tables</li>
+                            <li>Data Tables</li>
+                            <li>Responsive Table</li>
+                            <li>Editable Table</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Boxicons</li>
-                        <li>Material Design</li>
-                        <li>Dripicons</li>
-                        <li>Font Awesome</li>
-                    </ul>
+
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bxs-bar-chart-alt-2'></i></a>
+                        <span>Charts</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Apex Charts</li>
+                            <li>E Charts</li>
+                            <li>Chartjs Chart</li>
+                            <li>Flot Chart</li>
+                            <li>Toast UI Chart</li>
+                            <li>Jquery Knob Chart</li>
+                            <li>Sparkline Chart</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-map'></i></a>
-                    <span>Maps</span>
+
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-aperture'></i></a>
+                        <span>Icons</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Boxicons</li>
+                            <li>Material Design</li>
+                            <li>Dripicons</li>
+                            <li>Font Awesome</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Google Maps</li>
-                        <li>Vector Maps</li>
-                        <li>Leaflet Maps</li>
-                    </ul>
+
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-map'></i></a>
+                        <span>Maps</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Google Maps</li>
+                            <li>Vector Maps</li>
+                            <li>Leaflet Maps</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="sidebar-popup">
-                <div class="icon-header">
-                    <a href="#"> <i class='bx bx-share-alt'></i></a>
-                    <span>Multi Level</span>
-                </div>
-                <div class="sidebar-popup-items">
-                    <ul>
-                        <li>Level 1.1</li>
-                        <li>Level 1.2</li>
-                    </ul>
+
+                <div class="sidebar-popup">
+                    <div class="icon-header">
+                        <a href="#"> <i class='bx bx-share-alt'></i></a>
+                        <span>Multi Level</span>
+                    </div>
+                    <div class="sidebar-popup-items">
+                        <ul>
+                            <li>Level 1.1</li>
+                            <li>Level 1.2</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
+         <div id="secondarySidebar" class="secondary-sidebar">
+             
+
+
+
+         </div>
+
+
+
+        <div class="square"></div>
+
     </div>
+</section>
+
+
+
+
 
 
 
@@ -499,11 +610,8 @@
     <script src="./dashbord.js"></script>
 
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"></script>
 
 
