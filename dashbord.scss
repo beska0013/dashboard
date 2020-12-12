@@ -36,7 +36,7 @@ body{
      box-sizing: border-box;
      background-color: #2a3042;
      background-image: url(./images/logo-light.svg);
-     background-size: contain;
+     background-size: 2rem;
      background-repeat: no-repeat;
      background-position: center;
      width: 5rem;
@@ -46,7 +46,7 @@ body{
     box-sizing: border-box;
     background-color: #2a3042;
     background-image: url(./images/logo-light.png);
-    background-size: contain;
+    background-size: 8rem;
     background-repeat: no-repeat;
     background-position: center;
     width: 250px;
@@ -436,9 +436,7 @@ body{
      transition:all .1s ease-in-out;
  }
 .sidebar-collapse{
-    width: 0;
-    visibility: hidden;
-    opacity: 0;
+    display: none;
     transition:all .1s ease-in-out;
 }
  .sidebar i{
@@ -515,10 +513,10 @@ body{
      transition: all .2s linear;
  }
  //secondary sidebar//
- 
+
  .secondary-sidebar{
     margin-top: 4rem;
-    width: 18.7rem;
+    width: max-content;
     height: 300vh;
     background-color: #2a3042;
     top: 4rem; 
@@ -530,7 +528,85 @@ body{
     display: block;
  }
    
+ .secondary-sidebar-content{
+     position: relative;
+     padding: 1.5rem;
+     font-family: Poppins-ExtraLight,sans-serif;
+     color: #a6b0cf;
+     width: 15.6rem;
+     
+     h6{
+        letter-spacing: .05em;
+        font-weight: 700;
+        font-size: 11px;
+        color: #6a7187;
+     }
+     a {
+         background-color: #2a3042;
+         padding: 0 0 1rem 0;
+         text-decoration: none;
+         color: #a6b0cf;
+         font-size: 16.8px;
+         transition: all .5s ease-in-out;
+         width: 100%;
+         
+     }
+     ul{
+        padding: .5rem 1.5rem;
+        
+        li{
+            padding: .5rem 0;
+            cursor: pointer;
+            transition: all .5s ease-in-out;
+            &:hover{
+                color: #fff;
+                transition: all .5s ease-in-out;
+            }
+        }
+     }
+ }
+ .secondary-sidebar-items{
+     padding: 1rem 0;
+     &:hover > .title a{
+        color: #fff;
+        transition: all .5s ease-in-out;
+     }
+ }
+ .title{
+     display: flex;
+     span{
+     letter-spacing: 1px;
+     line-height:1.3rem;
+     height: 18px;
+     font-weight: 700;
+     font-size: 10px;
+     border-radius: 1rem;
+     padding: 0rem .7rem;
+     color: white;
+     transition: all .1s linear;
+     }
+ }
  
+ .secondary-sidebar-box {
+    height:0;
+    overflow: hidden;
+    transition: height .3s ease-in-out ;
+   }
+
+.secondary-sidebar-box-show {
+    height:120px;
+    transition: height .3s linear;
+   }
+   .secondary-sidebar-box-show2 {
+    height: 25rem;
+    transition: height .3s linear;
+  }
+.icon-rotate{
+    transform: rotate(-180deg);
+    transition: all .1s linear;
+}  
+   
+
  /* test */
  .square{
      width: 100%;

@@ -10,7 +10,6 @@ function sidebarSwitch(){
   document.getElementById('secondaryLogo').classList.toggle('logo-dark-show')
 }
 
-
 // mega menu dropdown//
 
  const megaBtn = document.getElementById('megaBtn')
@@ -123,3 +122,15 @@ function switchOffBtn() {
   document.getElementById("headerModalSidebar").classList.remove('switch-in');
 }
 //right navbar menu dropdown end//
+
+// secondary sidebar//
+document.getElementById("secondarySidebarItemsTitle").onclick = function () {titlefBtn()}
+function titlefBtn() {
+  document.getElementById("secondarySideBox").classList.toggle('secondary-sidebar-box-show');
+}
+
+document.getElementById("secondarySidebarItemsTitle2").onclick = function () {titlefBtn2()}
+function titlefBtn2() {
+  document.getElementById("secondarySideBox2").classList.toggle('secondary-sidebar-box-show2');
+  document.getElementById("move").classList.toggle('icon-rotate');
+}
