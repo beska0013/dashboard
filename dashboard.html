@@ -28,7 +28,7 @@
                     <input class="mr-2" type="search " name="" placeholder="Search">
                 </form>
 
-                <div class="custom-dropdown">
+                <div class="custom-dropdown" style="position: unset;">
                     <div id="megaBtn" class="custom-btn arrow-down ml-1 mr-2">
                         Mega Menu
                     </div>
@@ -90,10 +90,19 @@
             <!-- navbar right -->
             <div class="custom-nav_menu" style="margin-right: 1rem;">
 
-                <div class="custom-dropdown">
-                    <div id="modalBtn" class="custom-btn flag_img mr-4"></div>
+                <div class="custom-dropdown mediahidden">
+                    <div id="modalBtn" class="custom-btn bx bx-search-alt mr-4"></div>
+                    <div id="modal" class="modal-box  p-2 ">
+                        <form class="searchform2">
+                            <input  type="search " name="" placeholder="Search ...">
+                        </form>
+                    </div>
+                </div>
 
-                    <div id="modal" class="modal-box p-2 ">
+                <div class="custom-dropdown">
+                    <div id="modalBtn1" class="custom-btn flag_img mr-4"></div>
+
+                    <div id="modal1" class="modal-box p-2 ">
                         <ul>
                             <li><img src="./images/us.jpg" class="flag_img" alt="us_flag_log"> English</li>
                             <li><img src="./images/spain.jpg" class="flag_img" alt=""> Spanish</li>
@@ -200,25 +209,30 @@
                 </div>
                 <span class="custom-badge custom-badge-danger">3</span>
                 <div class="custom-dropdown">
-                    <div id="modalBtn4" class="custom-btn arrow-down mr-4">
-                        <img src="./images/avatar-1.jpg" class="avatar-img" alt="avatar1">
-                        Henry
+                    <div id="modalBtn4" class="custom-btn btnimg arrow-down mr-4">
+                         <span> Henry</span>
+                        
                     </div>
                     <div id="modal4" class="modal-box p-2 ">
                         <ul>
                             <li><i class='bx bx-user'></i> Profile</li>
                             <li><i class='bx bx-wallet'></i> My Wallet</li>
-                            <li><i class='bx bx-wrench'></i> Setings <span
-                                    class="custom-badge custom-badge-success ml-2">11</span></li>
+                            <li>
+                                <i class='bx bx-wrench'></i>
+                                 Setings 
+                            <span class="custom-badge custom-badge-success ml-2">11</span>
+                        </li>
                             <li><i class='bx bx-lock-open'></i> Lock Screen</li>
                             <li class="logout pt-1"><i class='bx bx-power-off'></i> LogOut</li>
                         </ul>
                     </div>
                 </div>
+                 <!-- header sidebar -->
                 <div class="custom-header-modal-sidebar">
                     <div type="button" class="custom-btn mr-1" id="headerModalSidebarBtn">
                         <i class='bx bx-cog bx-spin bx-flip-vertical'></i>
                     </div>
+
                     <div class="header-modal-sidebar" id="headerModalSidebar">
                         <div class="modal-sidebar">
                             <header>
@@ -586,51 +600,338 @@
                     </div>
                 </div>
             </div>
+            <!-- seconadary sidebar -->
             <div id="secondarySidebar" class="secondary-sidebar">
-                <div class="secondary-sidebar-content">
-                    <div class="secondary-sidebar-items">
-                        <h6>MENU</h6>
-                        <div id="secondarySidebarItemsTitle" class="title">
-                            <a href="#"><i class='bx bx-home-circle'></i> Dashbord</a>
-                            <span class="bg-primary">03</span>
+                <section>
+                    <div class="secondary-sidebar-content">
+
+                        <div class="secondary-sidebar-items">
+                            <h6>MENU</h6>
+                            <div id="secondarySidebarItemsTitle" class="title">
+                                <a href="#"><i class='bx bx-home-circle'></i> Dashbord</a>
+                                <span class="bg-primary">03</span>
+                            </div>
+                            <div id="secondarySideBox" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Default</li>
+                                    <li>Saas</li>
+                                    <li>Crypto</li>
+                                </ul>
+                            </div>
                         </div>
-                        <div id="secondarySideBox" class="secondary-sidebar-box">
-                            <ul>
-                                <li>Default</li>
-                                <li>Saas</li>
-                                <li>Crypto</li>
-                            </ul>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle2" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-layout'></i> Layout</a>
+                                <span id="move" class="arrow-down"></span>
+                            </div>
+                            <div id="secondarySideBox2" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Horizontal</li>
+                                    <li>Vertical</li>
+                                    <li>Light Sidebar</li>
+                                    <li>Compact Sidebar</li>
+                                    <li>Ican Sidebar</li>
+                                    <li>Boxed Width</li>
+                                    <li>Preloader</li>
+                                    <li>Colord Sidebar</li>
+                                    <li>Scrollable</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <h6>APPS</h6>
+                            <div id="secondarySidebarItemsTitle" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-calendar'></i> Calendar</a>
+                            </div>
+                        </div>
+
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle" class="title">
+                                <a href="javascript:void(0)"><i class='bx  bx-chat'></i> Chat</a>
+                                <span class="bg-success">News</span>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle3" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-store-alt'></i> Ecommerce</a>
+                                <span id="move2"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox3" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Products</li>
+                                    <li>Products Detail</li>
+                                    <li>Order</li>
+                                    <li>Customers</li>
+                                    <li>Cart</li>
+                                    <li>Chekout</li>
+                                    <li>Shops</li>
+                                    <li>Add Product</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle4" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-bitcoin'></i> Crypto</a>
+                                <span id="move3"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox4" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Wallet</li>
+                                    <li>Buy/Sell</li>
+                                    <li>Exchange</li>
+                                    <li>Lending</li>
+                                    <li>Orders</li>
+                                    <li>KYC Application</li>
+                                    <li>ICO Landing</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle5" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-envelope'></i> Email</a>
+                                <span id="move4"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox5" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Inbox</li>
+                                    <li>Read Email</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle6" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-receipt'></i> Invoice</a>
+                                <span id="move5"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox6" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Invoices List</li>
+                                    <li>Invoices Details</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle7" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-briefcase-alt-2'></i> Project</a>
+                                <span id="move6"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox7" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Projects Grid</li>
+                                    <li>Projects list</li>
+                                    <li>Projects Overview</li>
+                                    <li>Create New</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle8" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-task'></i> Tasks</a>
+                                <span id="move7"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox8" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Task List</li>
+                                    <li>Kanban Board</li>
+                                    <li>Projects Overview</li>
+                                    <li>Create Task</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle9" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bxs-user-detail'></i> Contacts</a>
+                                <span id="move8"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox9" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>User Grid</li>
+                                    <li>User List</li>
+                                    <li>ProFile</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <h6>PAGES</h6>
+                            <div id="secondarySidebarItemsTitle10" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-user-circle'></i> Authentication</a>
+                                <span id="move9"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox10" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Login</li>
+                                    <li>Register</li>
+                                    <li>Recover Password</li>
+                                    <li>Lock Screen</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle11" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-file'></i> Utility</a>
+                                <span id="move10"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox11" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Starter Page</li>
+                                    <li>Maintance</li>
+                                    <li>Comming Soon</li>
+                                    <li>FAQs</li>
+                                    <li>Pricing</li>
+                                    <li>Error 404</li>
+                                    <li>Error 500</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <h6>COMPONENTS</h6>
+                            <div id="secondarySidebarItemsTitle12" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-tone'></i> UI Elements</a>
+                                <span id="move11"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox12" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Alerts</li>
+                                    <li>Buttons</li>
+                                    <li>Cards</li>
+                                    <li>Carousel</li>
+                                    <li>Dropdowns</li>
+                                    <li>Grid</li>
+                                    <li>Images</li>
+                                    <li>Light Box</li>
+                                    <li>Modals</li>
+                                    <li>Range Slider</li>
+                                    <li>Session Timeout</li>
+                                    <li>Progress Bars</li>
+                                    <li>Sweet-Alert</li>
+                                    <li>Tabs & Accordions</li>
+                                    <li>Typography</li>
+                                    <li>Video</li>
+                                    <li>General</li>
+                                    <li>Colors</li>
+                                    <li>Rating</li>
+                                    <li>Notifications</li>
+                                    <li>Image Cropper</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle13" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-file'></i> Forms</a>
+                                <span class="bg-danger">10</span>
+                            </div>
+                            <div id="secondarySideBox13" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Forms Elements</li>
+                                    <li>Forms Layouts</li>
+                                    <li>Forms Validation</li>
+                                    <li>Forms Advanced</li>
+                                    <li>Forms Editors</li>
+                                    <li>Forms File Upload</li>
+                                    <li>Forms Xeditable</li>
+                                    <li>Forms Repeater</li>
+                                    <li>Forms Wizard</li>
+                                    <li>Forms Mask</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle14" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-list-ul'></i> Tables</a>
+                                <span id="move12"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox14" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Basic Tables</li>
+                                    <li>Data Tables</li>
+                                    <li>Responsive Table</li>
+                                    <li>Editable Table</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle15" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bxs-bar-chart-alt-2'></i> Charts</a>
+                                <span id="move13"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox15" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Apex Charts</li>
+                                    <li>E Charts</li>
+                                    <li>Chartjs Chart</li>
+                                    <li>Flot Chart</li>
+                                    <li>Toast UI Chart</li>
+                                    <li>Jquery Knob Chart</li>
+                                    <li>Sparkline Chart</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle16" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-aperture'></i> Icons</a>
+                                <span id="move14"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox16" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Boxicons</li>
+                                    <li>Material Design</li>
+                                    <li>Dripicons</li>
+                                    <li>Font Awesome</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle17" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-map'></i> Maps</a>
+                                <span id="move15"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox17" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Google Maps</li>
+                                    <li>Vector Maps</li>
+                                    <li>Leaflet Maps</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="secondary-sidebar-items">
+                            <div id="secondarySidebarItemsTitle18" class="title">
+                                <a href="javascript:void(0)"> <i class='bx bx-share-alt'></i> Multi Level</a>
+                                <span id="move16"><i class='bx bxs-chevron-down'></i></span>
+                            </div>
+                            <div id="secondarySideBox18" class="secondary-sidebar-box">
+                                <ul>
+                                    <li>Level 1.1</li>
+                                    <li>Level 1.2</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="secondary-sidebar-items">
-                        <div id="secondarySidebarItemsTitle2" class="title">
-                            <a href="#"> <i class='bx bx-layout'></i> Layout</a>
-                            <span id="move" class="arrow-down"></span>
-                        </div>
-                        
-                        <div id="secondarySideBox2" class="secondary-sidebar-box">
-                            <ul>
-                                <li>Horizontal</li>
-                                <li>Vertical</li>
-                                <li>Light Sidebar</li>
-                                <li>Compact Sidebar</li>
-                                <li>Ican Sidebar</li>
-                                <li>Boxed Width</li>
-                                <li>Preloader</li>
-                                <li>Colord Sidebar</li>
-                                <li>Scrollable</li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-                </div>
+                </section>
             </div>
 
 
-            <div class="square"></div>
+            <div class="square">
+                <div class="square2"></div>
+            </div>
 
         </div>
     </section>
