@@ -709,7 +709,7 @@ li {
   margin: 10rem 10rem;
   width: 50%;
   height: 50vh;
-  background-color: red;
+  background-color: blue;
 }
 
 @media (max-width: 998px) {
