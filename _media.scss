@@ -1,17 +1,12 @@
-
-
-@media(min-width:1600px){
-    .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-        width: 6.5rem;
+@media(min-height: 733px)
+{
+    .secondary-sidebar-content
+    {
+        height: 95%;
     }
-        
 }
-
-
-
-
-
-@media(max-width:998px){
+@media(max-width:998px)
+{
     #megaBtn,.search-form,.sidebar,
     .arrow-down::after, #modalBtn4 span{
         display: none;
@@ -20,26 +15,37 @@
        right: 9rem;
     }
     //main sidebar logo
-    .mediahidden,.logo_light{
+    .mediahidden,.logo_light
+    {
        display:block;
-   }
-   .logo-dark-show{
+    }
+   .logo-dark-show
+    {
        display: none;
-   }
+    }
 
-    .maincontant .section-1 {
+    .maincontant .section-1
+    {
         display: block;
-        .custom-card{
+        .section-1-contant
+        {
+            width: 100%;
+            padding: 0 0 1.5rem 0!important;
+        }
+        .custom-card
+        {
+            width: 100%;
+        }
+        .section-1-contant2
+        {
+            margin-top: 1rem;
             width: 100%;
         }
     }
-    .section-1-contant{
-        padding: 0 0 1.5rem 0!important;
-    }
-   }
+}
    @media(max-width:824px){
     .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-        width: 3rem;
+        // width: 3rem;
     }
     }
 
@@ -61,7 +67,7 @@
    
     @media(max-width:758px){
         .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-            width: 2.5rem;
+            // width: 2.5rem;
         }
     }
   
@@ -70,18 +76,18 @@
         display: none;
     }
     .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-        width: 2rem;
+        // width: 2rem;
     }
     .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar{
-        width: .5rem;
+        // width: .5rem;
     }
    }
 
    @media(max-width:408px){
     .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-        width: 1.5rem;
+        // width: 1.5rem;
     }
     .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar{
-        width: .3rem;
+        // width: .3rem;
     }
    }

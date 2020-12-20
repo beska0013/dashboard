@@ -1,0 +1,24 @@
+@mixin d-center
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin paid
+{
+    font-weight: 700;
+    color: #34c38f;
+    background-color: #34c38f2d;
+}
+@mixin chargeback
+{
+    font-weight: 700;
+    color: #f46a6a;
+    background-color: #f46a6a2d;
+}
+@mixin refund
+{
+    font-weight: 700;
+    color: #f1b44c;
+    background-color:#f1b44c54;
+}

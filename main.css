@@ -1,6 +1,6 @@
 body {
   background-color: #f3f3f9;
-  font-family: Poppins-ExtraLight,sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 100;
   overflow-x: hidden;
 }
@@ -53,7 +53,7 @@ li {
   background-size: 8rem;
   background-repeat: no-repeat;
   background-position: center;
-  width: 250px;
+  width: 251px;
   height: 100%;
   display: none;
 }
@@ -498,7 +498,6 @@ li {
 
 /* sidebar */
 .sidebar {
-  margin-top: 4rem;
   width: 5.3rem;
   background-color: #2a3042;
   top: 4rem;
@@ -587,8 +586,7 @@ li {
 }
 
 .secondary-sidebar {
-  margin-top: 4rem;
-  width: 250px;
+  min-width: 15.7rem;
   background-color: #2a3042;
   display: none;
 }
@@ -598,10 +596,33 @@ li {
 }
 
 .secondary-sidebar-content {
-  padding: 1.5rem;
+  position: fixed;
+  padding: 1.5rem 1rem 1.5rem 1.5rem;
   font-family: Poppins-ExtraLight,sans-serif;
   color: #a6b0cf;
   width: 15.7rem;
+  height: 45rem;
+  overflow-y: scroll;
+}
+
+.secondary-sidebar-content::-webkit-scrollbar {
+  width: 5px;
+  padding: 0;
+}
+
+.secondary-sidebar-content::-webkit-scrollbar-track {
+  background-color: #2a3042;
+}
+
+.secondary-sidebar-content::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 2px;
+  transition: all .2s ease-in-out;
+}
+
+.secondary-sidebar-content:hover::-webkit-scrollbar-thumb {
+  background: #79829c81;
+  transition: all .2s ease-in-out;
 }
 
 .secondary-sidebar-content h6 {
@@ -697,46 +718,51 @@ li {
 .maincontant {
   height: 100%;
   width: 100%;
-  padding: 5.5rem .6rem  4.5rem;
+  padding: .6rem;
 }
 
-.maincontant header {
+.maincontant header, .maincontant footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 0 1.5rem 0;
+  padding: 1rem 0;
 }
 
-.maincontant header h4 {
+.maincontant header h4, .maincontant footer h4 {
   font-size: 16px;
   color: #495057;
   font-weight: 600;
 }
 
-.maincontant header h5 {
+.maincontant header h5, .maincontant footer h5 {
   display: flex;
   justify-content: space-between;
   font-size: 13px;
   font-weight: 600;
 }
 
-.maincontant header h5 a {
+.maincontant header h5 a, .maincontant footer h5 a {
   padding: 0 .3rem;
   color: #495057;
   text-decoration: none;
 }
 
-.maincontant header h5 li {
+.maincontant header h5 li, .maincontant footer h5 li {
   color: #74788d;
 }
 
 .maincontant .section-1 {
   display: flex;
+  width: 100%;
+}
+
+.maincontant .section-1 .section-1-contant {
+  width: 34%;
+  padding-right: 1.5rem;
 }
 
 .maincontant .section-1 .custom-card {
   border-radius: .25rem;
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
-  width: 30rem;
   overflow: hidden;
   background-color: #fff;
 }
@@ -790,13 +816,10 @@ li {
   width: 5rem;
 }
 
-.maincontant .section-1 .section-1-contant2 {
-  width: 100%;
-}
-
 .maincontant .section-1 .section-1-contant2 header {
   display: flex;
   justify-content: space-between;
+  padding: 0 0 1.5rem;
 }
 
 .maincontant .section-1 .section-1-contant2 header .custom-card-onethird {
@@ -804,7 +827,7 @@ li {
   justify-content: space-between;
   background-color: #fff;
   padding: 1rem;
-  width: 31%;
+  width: 32%;
   border-radius: .25rem;
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
 }
@@ -880,7 +903,7 @@ li {
   font-weight: 500;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord a {
+.maincontant .section-1 .section-1-contant2 .dashbord .dashbord-title a {
   padding: .5rem 1rem;
   text-decoration: none;
   font-size: 13px;
@@ -888,64 +911,63 @@ li {
   color: #495057;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .dashlink {
+.maincontant .section-1 .section-1-contant2 .dashbord .dashbord-title .dashlink {
   border-radius: .2rem;
   color: #fff;
   background-color: #556ee6;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart {
-  height: 100%;
-  position: relative;
+.maincontant .section-1 .section-1-contant2 .dashbord .bluebar {
+  background-color: #556ee6;
+  transition: all .2s ease-in-out;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric {
-  height: 100%;
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
+.maincontant .section-1 .section-1-contant2 .dashbord .bluebar:hover {
+  background-color: #556de6c4;
+  transition: all .2s ease-in-out;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line {
-  display: flex;
-  align-items: flex-end;
-  padding: 1.1rem 0;
+.maincontant .section-1 .section-1-contant2 .dashbord .bluebar:hover + .note {
+  right: 1rem;
+  visibility: visible;
+  opacity: 1;
+  transition: all .2s ease-in-out;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line span {
-  padding: 0 .5rem 0 0;
-  color: #74788dad;
+.maincontant .section-1 .section-1-contant2 .dashbord .orangebar {
+  background-color: #f1b44c;
+  transition: all .2s ease-in-out;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .line {
-  width: 100%;
-  height: .5px;
-  background-color: #74788d25;
+.maincontant .section-1 .section-1-contant2 .dashbord .orangebar:hover {
+  background-color: #f1b44caf;
+  transition: all .2s ease-in-out;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline {
-  position: absolute;
-  top: 3.5rem;
-  left: 2rem;
-  display: flex;
-  align-items: flex-end;
+.maincontant .section-1 .section-1-contant2 .dashbord .orangebar:hover + .note {
+  right: 1rem;
+  visibility: visible;
+  opacity: 1;
+  transition: all .2s ease-in-out;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .bars {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
+.maincontant .section-1 .section-1-contant2 .dashbord .greenbar {
+  background-color: #34c38f;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar {
-  position: relative;
-  display: flex;
-  flex-flow: column-reverse;
-  width: 1rem;
-  height: 17rem;
+.maincontant .section-1 .section-1-contant2 .dashbord .greenbar:hover {
+  background-color: #34c38fa6;
+  transition: all .2s ease-in-out;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .note {
+.maincontant .section-1 .section-1-contant2 .dashbord .greenbar:hover + .note {
+  right: 1rem;
+  visibility: visible;
+  opacity: 1;
+  transition: all .2s ease-in-out;
+}
+
+.maincontant .section-1 .section-1-contant2 .dashbord .note {
   overflow: hidden;
   background-color: #fff;
   position: absolute;
@@ -960,97 +982,104 @@ li {
   transition: all .2s ease-in-out;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .note header {
+.maincontant .section-1 .section-1-contant2 .dashbord .note header {
   padding: .5rem;
   font-size: 8px;
   background-color: #f3f3f9;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .note section {
+.maincontant .section-1 .section-1-contant2 .dashbord .note section {
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .note section p {
+.maincontant .section-1 .section-1-contant2 .dashbord .note section p {
   margin: 0;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .note section .indicate {
+.maincontant .section-1 .section-1-contant2 .dashbord .note section .indicate {
   height: 1rem;
   width: 1rem;
   border-radius: 50%;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .bluebar {
-  background-color: #556ee6;
-  transition: all .2s ease-in-out;
+.maincontant .section-1 .section-1-contant2 .dashbord .chart {
+  height: 100%;
+  display: flex;
+  position: relative;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .bluebar:hover {
-  background-color: #556de6c4;
-  transition: all .2s ease-in-out;
+.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric {
+  height: 100%;
+  width: 2rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .bluebar:hover + .note {
-  right: 1rem;
-  visibility: visible;
-  opacity: 1;
-  transition: all .2s ease-in-out;
+.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric span {
+  padding: 1.1rem 0;
+  color: #74788dad;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .orangebar {
-  background-color: #f1b44c;
-  transition: all .2s ease-in-out;
+.maincontant .section-1 .section-1-contant2 .dashbord .chart .bars {
+  display: flex;
+  align-items: flex-end;
+  padding: 1.1rem 0;
+  width: 100%;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .orangebar:hover {
-  background-color: #f1b44caf;
-  transition: all .2s ease-in-out;
+.maincontant .section-1 .section-1-contant2 .dashbord .chart .bars .bar {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .orangebar:hover + .note {
-  right: 1rem;
-  visibility: visible;
-  opacity: 1;
-  transition: all .2s ease-in-out;
-}
-
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .greenbar {
-  background-color: #34c38f;
-}
-
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .greenbar:hover {
-  background-color: #34c38fa6;
-  transition: all .2s ease-in-out;
-}
-
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar .greenbar:hover + .note {
-  right: 1rem;
-  visibility: visible;
-  opacity: 1;
-  transition: all .2s ease-in-out;
-}
-
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-  margin: 0;
-  padding: 0;
+.maincontant .section-1 .section-1-contant2 .dashbord .chart .bars .bar .line-square {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: .5rem;
-  width: 4.4rem;
+  width: 100%;
   border: 1.8px solid #74788d6e;
   border-bottom: hidden;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .monthline {
-  width: 100%;
-  margin-left: 3rem;
+.maincontant .section-1 .section-1-contant2 .dashbord .chart .bars .bar .line-square span {
+  font-size: 13px;
+  color: #74788dad;
+  margin-top: 2rem;
 }
 
-.maincontant .section-1 .section-1-contant2 .dashbord .chart .monthline span {
-  font-size: 16px;
-  color: #74788dad;
-  margin-right: 3rem;
+.maincontant .section-1 .section-1-contant2 .dashbord .chart .bars .verticalbar {
+  position: relative;
+  display: flex;
+  flex-flow: column-reverse;
+  width: .7rem;
+  height: 17rem;
+}
+
+.maincontant .section-1 .section-1-contant2 .dashbord footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem 0 0;
+}
+
+.maincontant .section-1 .section-1-contant2 .dashbord footer .bar-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+}
+
+.maincontant .section-1 .section-1-contant2 .dashbord footer .bar-indicator span {
+  height: 1rem;
+  width: 1rem;
+  border-radius: .25rem;
 }
 
 .section-2 {
@@ -1059,7 +1088,6 @@ li {
 
 .section-2 .custom-card {
   padding: 1rem;
-  margin: 1rem;
   background-color: #fff;
   border-radius: .25rem;
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
@@ -1077,6 +1105,10 @@ li {
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
+}
+
+.section-2 .custom-card .custom-card-body h6 {
+  margin-bottom: 1.5rem;
 }
 
 .section-2 .custom-card .custom-card-body p {
@@ -1152,13 +1184,14 @@ li {
 .section-2 .custom-card .custom-card-body .activities p {
   font-size: 14px;
   margin: 0 1rem;
+  width: 100%;
 }
 
 .section-2 .custom-card .custom-card-body .active-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 1.7rem 0;
+  margin: 1.4rem 0 0 0;
 }
 
 .section-2 .custom-card .custom-card-body .active-link i {
@@ -1175,21 +1208,22 @@ li {
 .section-2 .custom-card .custom-card-body .progress-bluebar, .section-2 .custom-card .custom-card-body .progress-orangebar, .section-2 .custom-card .custom-card-body .progress-greenbar {
   height: 10px;
   border-radius: 2px;
+  margin-bottom: 2.2rem;
 }
 
 .section-2 .custom-card .custom-card-body .progress-bluebar {
   background-color: #556ee6;
-  width: 50%;
+  width: 80%;
 }
 
 .section-2 .custom-card .custom-card-body .progress-greenbar {
   background-color: #f1b44c;
-  width: 42%;
+  width: 72%;
 }
 
 .section-2 .custom-card .custom-card-body .progress-orangebar {
   background-color: #34c38f;
-  width: 34%;
+  width: 64%;
 }
 
 .section-2 .custom-card .custom-card-footer .social-source {
@@ -1271,14 +1305,76 @@ li {
   padding: .5rem 1rem;
 }
 
-.section-3 .check-list h5 {
+.section-3 .check-list .check-list-body span {
+  padding: 0 1rem;
+  border-radius: 1rem;
+}
+
+.section-3 .check-list .check-list-body a {
+  text-decoration: none;
+  background-color: #556ee6;
+  color: #fff;
+  font-weight: 500;
+  padding: 0 1rem;
+  border-radius: 1rem;
+}
+
+.section-3 .check-list .check-list-body h5 {
   font-size: 16px;
   font-weight: 700;
 }
 
-@media (min-width: 1600px) {
-  .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-    width: 6.5rem;
+.section-3 .check-list .check-list-body .status-green {
+  font-weight: 700;
+  color: #34c38f;
+  background-color: #34c38f2d;
+}
+
+.section-3 .check-list .check-list-body .status-pink {
+  font-weight: 700;
+  color: #f46a6a;
+  background-color: #f46a6a2d;
+}
+
+.section-3 .check-list .check-list-body .status-orange {
+  font-weight: 700;
+  color: #f1b44c;
+  background-color: #f1b44c54;
+}
+
+.section-3 .check-list .check-list-body .master-card:before {
+  content: '\eea3';
+  font-family: "boxicons" !important;
+  margin-right: .5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: .1rem;
+  padding: 0 .1rem;
+}
+
+.section-3 .check-list .check-list-body .visa-card:before {
+  content: '\eecf';
+  font-family: "boxicons" !important;
+  margin-right: .5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: .1rem;
+  padding: 0 .1rem;
+}
+
+.section-3 .check-list .check-list-body .paypal-card:before {
+  content: '\eeae';
+  font-family: "boxicons" !important;
+  margin-right: .5rem;
+  background-color: #495057;
+  color: #fff;
+  border-radius: .1rem;
+  padding: 0 .1rem;
+}
+
+@media (min-height: 733px) {
+  .secondary-sidebar-content {
+    height: 95%;
   }
 }
 
@@ -1299,17 +1395,16 @@ li {
   .maincontant .section-1 {
     display: block;
   }
+  .maincontant .section-1 .section-1-contant {
+    width: 100%;
+    padding: 0 0 1.5rem 0 !important;
+  }
   .maincontant .section-1 .custom-card {
     width: 100%;
   }
-  .section-1-contant {
-    padding: 0 0 1.5rem 0 !important;
-  }
-}
-
-@media (max-width: 824px) {
-  .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-    width: 3rem;
+  .maincontant .section-1 .section-1-contant2 {
+    margin-top: 1rem;
+    width: 100%;
   }
 }
 
@@ -1327,29 +1422,8 @@ li {
   }
 }
 
-@media (max-width: 758px) {
-  .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-    width: 2.5rem;
-  }
-}
-
 @media (max-width: 502px) {
   .logo_light {
     display: none;
-  }
-  .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-    width: 2rem;
-  }
-  .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar {
-    width: .5rem;
-  }
-}
-
-@media (max-width: 408px) {
-  .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-    width: 1.5rem;
-  }
-  .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar {
-    width: .3rem;
   }
 }

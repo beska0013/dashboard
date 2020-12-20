@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
@@ -14,7 +16,7 @@
 
 <body>
     <!-- navbar -->
-    <header>
+    <header style="height: 4rem;">
         <!-- navbar left -->
         <div class="custom-navbar">
             <div class="custom-nav_menu">
@@ -934,110 +936,107 @@
                     </h5>
                 </header>
                 <section class="section-1">
-                    <div class="section-1-contant pr-4">
-                        <div class="custom-card mb-4">
-                            <div class="row first-half bg-light-blue">
-                                <div class="col-7">
-                                    <h5>Welcome Back !</h5>
-                                    <p>Skote Dashboard </p>
+                    <div class="row" style="width: 100%;">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="custom-card mb-4">
+                                <div class="row first-half bg-light-blue">
+                                    <div class="col-7">
+                                        <h5>Welcome Back !</h5>
+                                        <p>Skote Dashboard </p>
+                                    </div>
+                                    <div class="col-5">
+                                        <img src="./images/profile-img.png" class="profile-img" alt="profile">
+                                    </div>
                                 </div>
-                                <div class="col-5">
-                                    <img src="./images/profile-img.png" class="profile-img" alt="profile">
+
+                                <div class="row second-half">
+                                    <div class="col-4 pt-4">
+                                        <img src="./images/avatar-1.jpg" class="contant-avatar" alt="">
+                                        <h5>Henry Price</h5>
+                                        <p>UI/UX Designer</p>
+
+                                    </div>
+                                    <div class="col-4">
+                                        <h5>125</h5>
+                                        <p>Project</p>
+                                        <a href="#">View Profile </a>
+                                    </div>
+                                    <div class="col-4">
+                                        <h5>$1245</h5>
+                                        <p>Revenue</p>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="row second-half">
-                                <div class="col-4 pt-4">
-                                    <img src="./images/avatar-1.jpg" class="contant-avatar" alt="">
-                                    <h5>Henry Price</h5>
-                                    <p>UI/UX Designer</p>
+                            <div class="custom-card">
+                                <div class="row second-half">
+                                    <div class="col-6 pt-4">
+                                        <h6>Monthly Earning</h6>
+                                        <p>This month</p>
+                                        <h4>$34,252</h4>
+                                        <p><span>12% <i class='bx bx-up-arrow-alt'></i></span> From previous period</p>
+                                        <a href="#">View More <i class='bx bx-right-arrow-alt'></i></a>
 
+                                    </div>
+                                    <div class="col-6">
+                                        <!-- ? -->
+                                    </div>
                                 </div>
-                                <div class="col-4">
-                                    <h5>125</h5>
-                                    <p>Project</p>
-                                    <a href="#">View Profile </a>
-                                </div>
-                                <div class="col-4">
-                                    <h5>$1245</h5>
-                                    <p>Revenue</p>
-                                </div>
+                                <p class="pl-3">We craft digital, graphic and dimensional thinking.</p>
                             </div>
                         </div>
-
-                        <div class="custom-card">
-                            <div class="row second-half">
-                                <div class="col-6 pt-4">
-                                    <h6>Monthly Earning</h6>
-                                    <p>This month</p>
-                                    <h4>$34,252</h4>
-                                    <p><span>12% <i class='bx bx-up-arrow-alt'></i></span> From previous period</p>
-                                    <a href="#">View More <i class='bx bx-right-arrow-alt'></i></a>
-
-                                </div>
-                                <div class="col-6">
-                                    <!-- ? -->
-                                </div>
-                            </div>
-                            <p class="pl-3">We craft digital, graphic and dimensional thinking.</p>
-                        </div>
-                    </div>
-
-                    <div class="section-1-contant2">
-                        <header>
-                            <div class="custom-card-onethird">
-                                <div>
-                                    <p>Orders</p>
-                                    <h4>1,235</h4>
-                                </div>
-                                <span><i class='bx bx-copy-alt'></i></span>
-                            </div>
-                            <div class="custom-card-onethird">
-                                <div>
-                                    <p>Revenue</p>
-                                    <h4>$35, 723</h4>
-                                </div>
-                                <span><i class='bx bx-archive-in'></i></span>
-                            </div>
-                            <div class="custom-card-onethird">
-                                <div>
-                                    <p>Average Price</p>
-                                    <h4>$16.2</h4>
-                                </div>
-                                <span><i class='bx bx-purchase-tag'></i></span>
-                            </div>
-                        </header>
-                        <section class="dashbord">
-                            <div class="dashbord-title">
-                                <h4>Email Sent</h4>
-                                <div>
-                                    <a href="">Week</a>
-                                    <a href="">Month</a>
-                                    <a href="" class="dashlink">Year</a>
-                                </div>
-                            </div>
-                            <div class="chart">
-                                <div class="metric">
-                                    <div class="metric-line"><span>100</span>
-                                        <div class="line"></div>
+                        <div class="col-lg-8 col-md-12 col-md-12 pl-4 pr-0">
+                            <div class="section-1-contant2">
+                                <header>
+                                    <div class="custom-card-onethird">
+                                        <div>
+                                            <p>Orders</p>
+                                            <h4>1,235</h4>
+                                        </div>
+                                        <span><i class='bx bx-copy-alt'></i></span>
                                     </div>
+                                    <div class="custom-card-onethird">
+                                        <div>
+                                            <p>Revenue</p>
+                                            <h4>$35, 723</h4>
+                                        </div>
+                                        <span><i class='bx bx-archive-in'></i></span>
+                                    </div>
+                                    <div class="custom-card-onethird">
+                                        <div>
+                                            <p>Average Price</p>
+                                            <h4>$16.2</h4>
+                                        </div>
+                                        <span><i class='bx bx-purchase-tag'></i></span>
+                                    </div>
+                                </header>
+                                <!-- dashbord -->
+                                <section class="dashbord">
+                                    <div class="dashbord-title">
+                                        <h4>Email Sent</h4>
+                                        <div>
+                                            <a href="">Week</a>
+                                            <a href="">Month</a>
+                                            <a href="" class="dashlink">Year</a>
+                                        </div>
+                                    </div>
+                                    <div class="chart">
+                                        <!-- chart -->
 
-                                    <div class="metric-line"><span>80</span>
-                                        <div class="line ml-2"></div>
-                                    </div>
-                                    <div class="metric-line"><span>60</span>
-                                        <div class="line ml-2"></div>
-                                    </div>
-                                    <div class="metric-line"><span>40</span>
-                                        <div class="line ml-2"></div>
-                                    </div>
-                                    <div class="metric-line"><span>20</span>
-                                        <div class="line ml-2"></div>
-                                    </div>
-                                    <div class="metric-line pb-0"><span>0</span>
-                                        <div class="mainline">
+                                        <div class="metric">
+                                            <span>100</span>
+                                            <span>80</span>
+                                            <span>60</span>
+                                            <span>40</span>
+                                            <span>20</span>
+                                            <span>0</span>
+                                        </div>
+                                        <div class="bars">
+                                            <!-- bars -->
 
-                                            <div class="bars">
+
+                                            <div class="bar">
+                                                <!-- JAN -->
                                                 <div class="verticalbar">
                                                     <div class="bluebar" style="height: 42%;"></div>
                                                     <div class="note" style="top: 7rem;">
@@ -1073,10 +1072,13 @@
                                                         </section>
                                                     </div>
                                                 </div>
-                                                <div class="line-square"></div>
+                                                <div class="line-square">
+                                                    <span>Jan</span>
+                                                </div>
                                             </div>
 
-                                            <div class="bars">
+                                            <div class="bar">
+                                                <!-- FEB -->
                                                 <div class="verticalbar">
                                                     <div class="bluebar" style="height: 60%;"></div>
                                                     <div class="note" style="top: 7rem;">
@@ -1112,10 +1114,13 @@
                                                         </section>
                                                     </div>
                                                 </div>
-                                                <div class="line-square"></div>
+                                                <div class="line-square">
+                                                    <span>Feb</span>
+                                                </div>
                                             </div>
 
-                                            <div class="bars">
+                                            <div class="bar">
+                                                <!-- MAR -->
                                                 <div class="verticalbar">
                                                     <div class="bluebar" style="height: 40%;"></div>
                                                     <div class="note" style="top: 7rem;">
@@ -1151,10 +1156,13 @@
                                                         </section>
                                                     </div>
                                                 </div>
-                                                <div class="line-square"></div>
+                                                <div class="line-square">
+                                                    <span>Mar</span>
+                                                </div>
                                             </div>
 
-                                            <div class="bars">
+                                            <div class="bar">
+                                                <!-- ARP -->
                                                 <div class="verticalbar">
                                                     <div class="bluebar" style="height: 70%;"></div>
                                                     <div class="note" style="top: 7rem;">
@@ -1190,10 +1198,13 @@
                                                         </section>
                                                     </div>
                                                 </div>
-                                                <div class="line-square"></div>
+                                                <div class="line-square">
+                                                    <span>Apr</span>
+                                                </div>
                                             </div>
 
-                                            <div class="bars">
+                                            <div class="bar">
+                                                <!-- MAY -->
                                                 <div class="verticalbar">
                                                     <div class="bluebar" style="height: 20%;"></div>
                                                     <div class="note" style="top: 7rem;">
@@ -1229,10 +1240,13 @@
                                                         </section>
                                                     </div>
                                                 </div>
-                                                <div class="line-square"></div>
+                                                <div class="line-square">
+                                                    <span>May</span>
+                                                </div>
                                             </div>
 
-                                            <div class="bars">
+                                            <div class="bar">
+                                                <!-- JUN -->
                                                 <div class="verticalbar">
                                                     <div class="bluebar" style="height: 40%;"></div>
                                                     <div class="note" style="top: 7rem;">
@@ -1268,10 +1282,13 @@
                                                         </section>
                                                     </div>
                                                 </div>
-                                                <div class="line-square"></div>
+                                                <div class="line-square">
+                                                    <span>Jun</span>
+                                                </div>
                                             </div>
 
-                                            <div class="bars">
+                                            <div class="bar">
+                                                <!-- JUL -->
                                                 <div class="verticalbar">
                                                     <div class="bluebar" style="height: 35%;"></div>
                                                     <div class="note" style="top: 7rem;">
@@ -1307,10 +1324,13 @@
                                                         </section>
                                                     </div>
                                                 </div>
-                                                <div class="line-square"></div>
+                                                <div class="line-square">
+                                                    <span>Jul</span>
+                                                </div>
                                             </div>
 
-                                            <div class="bars">
+                                            <div class="bar">
+                                                <!-- AUG -->
                                                 <div class="verticalbar">
                                                     <div class="bluebar" style="height: 60%;"></div>
                                                     <div class="note" style="top: 7rem;">
@@ -1346,10 +1366,13 @@
                                                         </section>
                                                     </div>
                                                 </div>
-                                                <div class="line-square"></div>
+                                                <div class="line-square">
+                                                    <span>Aug</span>
+                                                </div>
                                             </div>
 
-                                            <div class="bars">
+                                            <div class="bar">
+                                                <!-- SEP -->
                                                 <div class="verticalbar">
                                                     <div class="bluebar" style="height: 20%;"></div>
                                                     <div class="note" style="top: 7rem;">
@@ -1385,10 +1408,13 @@
                                                         </section>
                                                     </div>
                                                 </div>
-                                                <div class="line-square"></div>
+                                                <div class="line-square">
+                                                    <span>Sep</span>
+                                                </div>
                                             </div>
 
-                                            <div class="bars">
+                                            <div class="bar">
+                                                <!-- OCT -->
                                                 <div class="verticalbar">
                                                     <div class="bluebar" style="height: 15%;"></div>
                                                     <div class="note" style="top: 7rem;">
@@ -1424,10 +1450,13 @@
                                                         </section>
                                                     </div>
                                                 </div>
-                                                <div class="line-square"></div>
+                                                <div class="line-square">
+                                                    <span>Oct</span>
+                                                </div>
                                             </div>
 
-                                            <div class="bars">
+                                            <div class="bar">
+                                                <!-- NOV -->
                                                 <div class="verticalbar">
                                                     <div class="bluebar" style="height: 50%;"></div>
                                                     <div class="note" style="top: 7rem;">
@@ -1463,10 +1492,13 @@
                                                         </section>
                                                     </div>
                                                 </div>
-                                                <div class="line-square"></div>
+                                                <div class="line-square">
+                                                    <span>Nov</span>
+                                                </div>
                                             </div>
 
-                                            <div class="bars">
+                                            <div class="bar">
+                                                <!-- DEC -->
                                                 <div class="verticalbar">
                                                     <div class="bluebar" style="height: 60%;"></div>
                                                     <div class="note" style="top: 7rem;">
@@ -1502,35 +1534,34 @@
                                                         </section>
                                                     </div>
                                                 </div>
-                                                <div class="line-square"></div>
+                                                <div class="line-square">
+                                                    <span>Dec</span>
+                                                </div>
                                             </div>
+
+                                        </div> <!-- bars end-->
+                                    </div> <!-- chart end -->
+                                    <footer>
+                                        <div class="bar-indicator">
+                                            <span class="bluebar mr-2"></span>
+                                            <p class="mb-0 mr-2">Series A</p>
+                                            <span class="orangebar mr-2"></span>
+                                            <p class="mb-0 mr-2">Series B</p>
+                                            <span class="greenbar mr-2"></span>
+                                            <p class="m-0 mr-2">Series C</p>
                                         </div>
-                                    </div>
-                                </div>
-                                <footer>
-                                    <div class="monthline">
-                                        <span>Jan</span>
-                                        <span>Feb</span>
-                                        <span class="ml-n2">Mar</span>
-                                        <span class="ml-n3">Apr</span>
-                                        <span>May</span>
-                                        <span class="ml-n3">Jun</span>
-                                        <span class="ml-n1">Jul</span>
-                                        <span class="ml-n2">Aug</span>
-                                        <span class="ml-n1">Sep</span>
-                                        <span class="ml-n2">Oct</span>
-                                        <span class="ml-n3">Nov</span>
-                                        <span>Dec</span>
-                                    </div>
-                                </footer>
-                            </div>
-                        </section> <!-- dashbord end -->
-                    </div> <!-- section one contant2 end -->
+                                    </footer>
+
+                                </section> <!-- dashbord end -->
+
+                            </div> <!-- section one contant2 end -->
+                        </div>
+                    </div>
                 </section> <!-- section one end -->
                 <!-- section two -->
-                <section class="section-2">
+                <section class="section-2 pr-3">
                     <div class="row">
-                        <div class="col-md-12 col-lg-4 col-sm-12">
+                        <div class="col-md-12 col-lg-4 col-sm-12 mb-4">
 
                             <div class="custom-card">
                                 <div class="custom-card-title">Social Source</div>
@@ -1567,12 +1598,12 @@
                             </div>
 
                         </div>
-                        <div class="col-md-12 col-lg-4 col-sm-12">
+                        <div class="col-md-12 col-lg-4 col-sm-12 mb-4">
 
                             <div class="custom-card">
                                 <div class="custom-card-title">Activity</div>
                                 <div class="custom-card-body">
-                                    <ul>
+                                    <ul class="m-0">
                                         <li class="activities">
                                             <i class='bx bx-right-arrow-circle bx-flip-vertical'
                                                 style='color:#070707'></i>
@@ -1584,8 +1615,8 @@
                                             <i class='bx bx-right-arrow-circle bx-flip-vertical'
                                                 style='color:#070707'></i>
                                             <h6>17 Nov</h6>
-                                            <i class='bx bx-right-arrow-alt mr-2 ml-4'></i>
-                                            <p class="ml-1"> Everyone realizes why a new common language
+                                            <i class='bx bx-right-arrow-alt '></i>
+                                            <p> Everyone realizes why a new common language
                                                 would be desirable...
                                                 <a href="#">Read More</a>
                                             </p>
@@ -1612,131 +1643,213 @@
                             </div>
 
                         </div>
-                        <div class="col-md-12 col-lg-4 col-sm-12">
+                        <div class="col-md-12 col-lg-4 col-sm-12 mb-4">
                             <div class="custom-card">
                                 <div class="custom-card-title">Top Cities Selling Product</div>
                                 <div class="custom-card-body">
-                                    <span class="pinlogo"><i class='bx bx-map-pin' style='color:#556ee6' ></i></span>
-                                    <a href="" class="text-dark mt-4"><h4>1,456</h4></a>
-                                    <p class="m-0">San Francisco</p>
-                                   
-                                    <ul style="width: 100%;">
-                                        <li class="activities">
-                                            <p>San Francisco</p>
-                                            <h6> 1,456</h6>
-                                            <div class="progress-bluebar "></div>
-                                        </li>
-                                        <li class="activities">
-                                            <p>Los Angeles</p>
-                                            <h6>1,123</h6>
-                                            <div class="progress-greenbar "></div>
-                                        </li>
-                                        <li class="activities">
-                                            <p>San Diego</p>
-                                            <h6>1,026</h6>
-                                            <div class="progress-orangebar "></div>
-                                        </li>
-                                    </ul>
+                                    <span class="pinlogo"><i class='bx bx-map-pin' style='color:#556ee6'></i></span>
+                                    <a href="" class="text-dark mt-4">
+                                        <h4>1,456</h4>
+                                    </a>
+                                    <p>San Francisco</p>
+
+                                    <div class="row" style="width: 100%;">
+                                        <div class="col-md-4">
+                                            <ul>
+                                                <li>
+                                                    <p style="width: 7rem;">San Francisco</p>
+                                                </li>
+                                                <li>
+                                                    <p>Los Angeles</p>
+                                                </li>
+                                                <li>
+                                                    <p>San Diego</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul class="d-flex align-items-center flex-column">
+                                                <li>
+                                                    <h6>1,456</h6>
+                                                </li>
+                                                <li>
+                                                    <h6>1,123</h6>
+                                                </li>
+                                                <li>
+                                                    <h6>1,026</h6>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <ul>
+                                                <li>
+                                                    <div class="progress-bluebar "></div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="progress-greenbar"></div>
+                                                </li>
+
+                                                <li>
+                                                    <div class="progress-orangebar"></div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section> <!-- section two end -->
-                <section class="section-3"> <!-- section three -->
+                <section class="section-3 pr-3">     <!-- section three -->
+                   
                     <div class="check-list">
                         <div class="check-list-title">Latest Transaction</div>
                         <table style="width: 100%;">
-                        <tr class="check-list-header">
-                            <th><input type="checkbox"></th>
-                            <th><h5>Order ID</h5></th>
-                            <th><h5>Billing Name</h5></th>
-                            <th><h5>Date</h5></th>
-                            <th><h5>Total</h5></th>
-                            <th><h5>Payment Status</h5></th>
-                            <th><h5>Payment Method</h5></th>
-                            <th><h5>View Details</h5></th>
-                        </tr>     
-                        <tr class="check-list-body">
-                            <td><input type="checkbox"></td>
-                            <td><h5>#SK2540</h5></td>
-                            <td> <h6>Neal Matthews</h6></td>
-                            <td><h6>07 Oct, 2019</h6></td>
-                            <td><h6>$400</h6></td>
-                            <td><span>Paid</span></td>
-                            <td> <span>Mastercard</span></td>
-                            <td><a href="#">View Details</a></td>
-                        </tr>
-                        <tr class="check-list-body">
-                            <td><input type="checkbox"></td>
-                            <td><h5>#SK2540</h5></td>
-                            <td> <h6>Neal Matthews</h6></td>
-                            <td><h6>07 Oct, 2019</h6></td>
-                            <td><h6>$400</h6></td>
-                            <td><span>Paid</span></td>
-                            <td> <span>Mastercard</span></td>
-                            <td><a href="#">View Details</a></td>
-                        </tr>
-                        <tr class="check-list-body">
-                            <td><input type="checkbox"></td>
-                            <td><h5>#SK2540</h5></td>
-                            <td> <h6>Neal Matthews</h6></td>
-                            <td><h6>07 Oct, 2019</h6></td>
-                            <td><h6>$400</h6></td>
-                            <td><span>Paid</span></td>
-                            <td> <span>Mastercard</span></td>
-                            <td><a href="#">View Details</a></td>
-                        </tr>
-                        <tr class="check-list-body">
-                            <td><input type="checkbox"></td>
-                            <td><h5>#SK2540</h5></td>
-                            <td> <h6>Neal Matthews</h6></td>
-                            <td><h6>07 Oct, 2019</h6></td>
-                            <td><h6>$400</h6></td>
-                            <td><span>Paid</span></td>
-                            <td> <span>Mastercard</span></td>
-                            <td><a href="#">View Details</a></td>
-                        </tr>
-                        <tr class="check-list-body">
-                            <td><input type="checkbox"></td>
-                            <td><h5>#SK2540</h5></td>
-                            <td> <h6>Neal Matthews</h6></td>
-                            <td><h6>07 Oct, 2019</h6></td>
-                            <td><h6>$400</h6></td>
-                            <td><span>Paid</span></td>
-                            <td> <span>Mastercard</span></td>
-                            <td><a href="#">View Details</a></td>
-                        </tr>
-                        <tr class="check-list-body">
-                            <td><input type="checkbox"></td>
-                            <td><h5>#SK2540</h5></td>
-                            <td> <h6>Neal Matthews</h6></td>
-                            <td><h6>07 Oct, 2019</h6></td>
-                            <td><h6>$400</h6></td>
-                            <td><span>Paid</span></td>
-                            <td> <span>Mastercard</span></td>
-                            <td><a href="#">View Details</a></td>
-                        </tr>
-                    </table>
+                            <tr class="check-list-header">
+                                <th><input type="checkbox"></th>
+                                <th>
+                                    <h5>Order ID</h5>
+                                </th>
+                                <th>
+                                    <h5>Billing Name</h5>
+                                </th>
+                                <th>
+                                    <h5>Date</h5>
+                                </th>
+                                <th>
+                                    <h5>Total</h5>
+                                </th>
+                                <th>
+                                    <h5>Payment Status</h5>
+                                </th>
+                                <th>
+                                    <h5>Payment Method</h5>
+                                </th>
+                                <th>
+                                    <h5>View Details</h5>
+                                </th>
+                            </tr>
+                            <tr class="check-list-body">
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <h5>#SK2540</h5>
+                                </td>
+                                <td>
+                                    <h6>Neal Matthews</h6>
+                                </td>
+                                <td>
+                                    <h6>07 Oct, 2019</h6>
+                                </td>
+                                <td>
+                                    <h6>$400</h6>
+                                </td>
+                                <td><span class="status-green">Paid</span></td>
+                                <td> <h6 class="master-card">Mastercard</h6></td>
+                                <td><a href="#">View Details</a></td>
+                            </tr>
+                            <tr class="check-list-body">
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <h5>#SK2541</h5>
+                                </td>
+                                <td>
+                                    <h6>Jamal Burnett</h6>
+                                </td>
+                                <td>
+                                    <h6>07 Oct, 2019</h6>
+                                </td>
+                                <td>
+                                    <h6>$380</h6>
+                                </td>
+                                <td><span class="status-pink">Chargeback</span></td>
+                                <td> <h6 class="visa-card">Visa</h6></td>
+                                <td><a href="#">View Details</a></td>
+                            </tr>
+                            <tr class="check-list-body">
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <h5>#SK2542</h5>
+                                </td>
+                                <td>
+                                    <h6>Juan Mitchell</h6>
+                                </td>
+                                <td>
+                                    <h6>06 Oct, 2019</h6>
+                                </td>
+                                <td>
+                                    <h6>$384</h6>
+                                </td>
+                                <td><span class="status-green">Paid</span></td>
+                                <td> <h6 class="paypal-card">Paypal</h6></td>
+                                <td><a href="#">View Details</a></td>
+                            </tr>
+                            <tr class="check-list-body">
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <h5>#SK2543</h5>
+                                </td>
+                                <td>
+                                    <h6>Barry Dick</h6>
+                                </td>
+                                <td>
+                                    <h6>05 Oct, 2019</h6>
+                                </td>
+                                <td>
+                                    <h6>$412</h6>
+                                </td>
+                                <td><span class="status-green">Paid</span></td>
+                                <td> <h6 class="master-card">Mastercard</h6></td>
+                                <td><a href="#">View Details</a></td>
+                            </tr>
+                            <tr class="check-list-body">
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <h5>#SK2544</h5>
+                                </td>
+                                <td>
+                                    <h6>Ronald Taylor</h6>
+                                </td>
+                                <td>
+                                    <h6>04 Oct, 2019</h6>
+                                </td>
+                                <td>
+                                    <h6>$404</h6>
+                                </td>
+                                <td><span class="status-orange">Refund</span></td>
+                                <td> <h6 class="visa-card">Visa</h6></td>
+                                <td><a href="#">View Details</a></td>
+                            </tr>
+                            <tr class="check-list-body">
+                                <td><input type="checkbox"></td>
+                                <td>
+                                    <h5>#SK2545</h5>
+                                </td>
+                                <td>
+                                    <h6>Jacob Hunter</h6>
+                                </td>
+                                <td>
+                                    <h6>04 Oct, 2019</h6>
+                                </td>
+                                <td>
+                                    <h6>$392</h6>
+                                </td>
+                                <td><span class="status-green">Paid</span></td>
+                                <td> <h6 class="paypal-card">PayPal</h6></td>
+                                <td><a href="#">View Details</a></td>
+                            </tr>
+                        </table>
                     </div>
 
                 </section><!-- section three end -->
+                <footer>
+                    <p>2020 © Skote.</p>
+                    <p>Design & Develop by Themesbrand</p>
+                </footer>
             </div> <!-- maincontant end -->
         </div>
         <!-- wrapper end -->
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="./dashbord.js"></script>
 
     <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
