@@ -669,7 +669,7 @@ body{
     height:10rem;
     transition: height .3s linear;
    }
-   .secondary-sidebar-box-show2 {
+.secondary-sidebar-box-show2 {
     height: 25rem;
     transition: height .3s linear;
   }
@@ -750,11 +750,12 @@ body{
                  }
              }
 
-          .second-half
-          {
+        .second-half
+        {
             padding: 1rem;
             background-color: #fff;
-            a{
+            a
+            {
                 text-decoration: none;
                 background-color: #556ee6;
                 color: #fff;
@@ -764,13 +765,19 @@ body{
                 border-radius: .2rem; 
                 letter-spacing: 1px;          
             }
-            h6{
+            h6
+            {
                 color: #495057;
                 font-size: 15px;
                 font-weight: 700;
             }
-       
-
+            .custom-apex
+            {
+               background-image: url(./images/stroked-gauge.svg);
+               background-position: center;
+               background-size: cover;
+               background-repeat: no-repeat;
+            }
             .contant-avatar{
                 margin: -5rem 0 1rem;
                 border: 6px solid #fff;
@@ -779,7 +786,7 @@ body{
                 width: 5rem;
                 }
                
-                }
+        }
             
              }
 
@@ -1256,13 +1263,35 @@ box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
 } // custom-card end//
 } // section two end//
 
-.section-3{//section three//
+.section-3  //section three//
+{
+    overflow: hidden;
     .check-list
     {
         border-radius: .25rem;
         box-shadow: 0 0.75rem 1.5rem rgba(18,38,63,.03);
         background-color: #fff;
         color: #495057;
+        min-width: 566px;
+        overflow-x: scroll;
+        &::-webkit-scrollbar
+        {  
+            width: 5px;
+            padding: 0;
+        }
+        &::-webkit-scrollbar-thumb
+       {   
+           background: transparent;
+           border-radius: 3px;
+           transition: all .2s ease-in-out;
+           
+       }
+       &:hover::-webkit-scrollbar-thumb
+       {
+           background: #79829c81;
+           transition:all .2s ease-in-out;
+           
+       }
         .check-list-title
         {
             font-size: 18px;
@@ -1270,55 +1299,59 @@ box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
             color: #495057;
             padding: 1rem 1rem;
         }
-        .check-list-header
-        {
-            background-color: #e6e6e6;
-            width: 100%;
-            th
-            {
-                padding: .5rem 1rem;
-            }
-            h5
-            {
-                font-size: 16px;
-                font-weight: 700;
-                margin: 0;
-            }
-        }
+        
         .check-list-body
-        {
+        {   
+            display: flex;
+            justify-content: space-between;
             width: 100%;
-                td
+            ul
+            {   display: flex;
+                flex-flow: column;
+                justify-content: space-between;
+                width: 100%;
+            }
+                li
                 {
-                padding: .5rem 1rem;
+                 padding: .5rem;
                 }
                 span
                 {   
                     padding: 0 1rem;
                     border-radius: 1rem;
+                    margin-bottom: 8px;
                 }
                 a
                 {
                     text-decoration: none;
                     background-color: #556ee6;
+                    font-size: 12px;
                     color: #fff;
                     font-weight: 500;
-                    padding: 0 1rem;
+                    padding:.3rem;
                     border-radius: 1rem;
+                    margin-bottom: 8px;
                 }
           
                  h5
-                 {
-                font-size: 16px;
-                font-weight: 700;
-                 }
+                {
+                  font-size: 16px;
+                  font-weight: 700;
+                  
+                }
+                
+            .check-list-header
+            {
+             background-color: #e6e6e6;
+             width: 100%;
+            }
                 .status-green
                 { 
-                @include paid 
+                    @include paid 
                 }
                 .status-pink
                  { 
-                 @include chargeback 
+                     @include chargeback 
                  }
             
                 .status-orange

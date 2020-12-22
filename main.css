@@ -808,6 +808,13 @@ li {
   font-weight: 700;
 }
 
+.maincontant .section-1 .custom-card .second-half .custom-apex {
+  background-image: url(./images/stroked-gauge.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .maincontant .section-1 .custom-card .second-half .contant-avatar {
   margin: -5rem 0 1rem;
   border: 6px solid #fff;
@@ -1268,11 +1275,33 @@ li {
   background-color: #e83e8c;
 }
 
+.section-3 {
+  overflow: hidden;
+}
+
 .section-3 .check-list {
   border-radius: .25rem;
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
   background-color: #fff;
   color: #495057;
+  min-width: 566px;
+  overflow-x: scroll;
+}
+
+.section-3 .check-list::-webkit-scrollbar {
+  width: 5px;
+  padding: 0;
+}
+
+.section-3 .check-list::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 3px;
+  transition: all .2s ease-in-out;
+}
+
+.section-3 .check-list:hover::-webkit-scrollbar-thumb {
+  background: #79829c81;
+  transition: all .2s ease-in-out;
 }
 
 .section-3 .check-list .check-list-title {
@@ -1282,46 +1311,48 @@ li {
   padding: 1rem 1rem;
 }
 
-.section-3 .check-list .check-list-header {
-  background-color: #e6e6e6;
-  width: 100%;
-}
-
-.section-3 .check-list .check-list-header th {
-  padding: .5rem 1rem;
-}
-
-.section-3 .check-list .check-list-header h5 {
-  font-size: 16px;
-  font-weight: 700;
-  margin: 0;
-}
-
 .section-3 .check-list .check-list-body {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
-.section-3 .check-list .check-list-body td {
-  padding: .5rem 1rem;
+.section-3 .check-list .check-list-body ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.section-3 .check-list .check-list-body li {
+  padding: .5rem;
 }
 
 .section-3 .check-list .check-list-body span {
   padding: 0 1rem;
   border-radius: 1rem;
+  margin-bottom: 8px;
 }
 
 .section-3 .check-list .check-list-body a {
   text-decoration: none;
   background-color: #556ee6;
+  font-size: 12px;
   color: #fff;
   font-weight: 500;
-  padding: 0 1rem;
+  padding: .3rem;
   border-radius: 1rem;
+  margin-bottom: 8px;
 }
 
 .section-3 .check-list .check-list-body h5 {
   font-size: 16px;
   font-weight: 700;
+}
+
+.section-3 .check-list .check-list-body .check-list-header {
+  background-color: #e6e6e6;
+  width: 100%;
 }
 
 .section-3 .check-list .check-list-body .status-green {
@@ -1406,6 +1437,9 @@ li {
     margin-top: 1rem;
     width: 100%;
   }
+  .section-3 .check-list .check-list-body {
+    width: 250rem;
+  }
 }
 
 @media (max-width: 758px) {
@@ -1425,5 +1459,23 @@ li {
 @media (max-width: 502px) {
   .logo_light {
     display: none;
+  }
+  .maincontant .section-1 .section-1-contant2 .dashbord .chart .bars .verticalbar {
+    width: .5rem;
+  }
+}
+
+@media (max-width: 408px) {
+  .maincontant .section-1 .section-1-contant2 .dashbord .chart .bars .verticalbar {
+    width: .2rem;
+  }
+  .maincontant .section-1 .section-1-contant2 .dashbord .chart .bars .bar {
+    width: 1.5rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .maincontant .section-1 .section-1-contant2 .dashbord .chart .bars .bar {
+    width: 1rem;
   }
 }

@@ -5,6 +5,7 @@
         height: 95%;
     }
 }
+
 @media(max-width:998px)
 {
     #megaBtn,.search-form,.sidebar,
@@ -42,52 +43,52 @@
             width: 100%;
         }
     }
+    .section-3 .check-list .check-list-body {
+        width: 250rem;
+       }
 }
-   @media(max-width:824px){
-    .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-        // width: 3rem;
-    }
-    }
 
-   @media(max-width:758px){
-    .maincontant header{
+   @media(max-width:758px)
+   {
+        .maincontant header{
         padding: 0;
-    }
-    .maincontant .section-1 .section-1-contant2 header {
+        }
+        .maincontant .section-1 .section-1-contant2 header {
         display: block;
        
-    }
-    .maincontant .section-1 .section-1-contant2 header .custom-card-onethird{
+        }
+        .maincontant .section-1 .section-1-contant2 header .custom-card-onethird{
         width: 100%;
         padding-bottom: 1.5rem;
         margin-bottom: 1rem;
-    }
+        }
 
     }
    
-    @media(max-width:758px){
-        .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-            // width: 2.5rem;
-        }
-    }
   
-   @media(max-width:502px){
-    .logo_light{
+  
+    @media(max-width:502px)
+    {
+        .logo_light{
         display: none;
-    }
-    .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-        // width: 2rem;
-    }
-    .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar{
-        // width: .5rem;
-    }
+         }
+        .maincontant .section-1 .section-1-contant2 .dashbord .chart .bars .verticalbar {
+        width: .5rem; 
+        }
    }
 
-   @media(max-width:408px){
-    .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .line-square {
-        // width: 1.5rem;
-    }
-    .maincontant .section-1 .section-1-contant2 .dashbord .chart .metric .metric-line .mainline .verticalbar{
-        // width: .3rem;
+   @media(max-width:408px)
+   {
+        .maincontant .section-1 .section-1-contant2 .dashbord .chart .bars .verticalbar {
+        width: .2rem;
+        }
+        .maincontant .section-1 .section-1-contant2 .dashbord .chart .bars .bar {
+        width: 1.5rem;
+        }
+   }
+   
+   @media(max-width:370px){
+    .maincontant .section-1 .section-1-contant2 .dashbord .chart .bars .bar {
+        width: 1rem;
     }
    }
