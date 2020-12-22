@@ -1009,11 +1009,7 @@ body{
                          color:#74788dad;
                         }
                     }       
-                            // .line{
-                            //     width: 100%;
-                            //     height: .5px;
-                            //     background-color:#74788d25 ;
-                            // }
+                        
                             .bars
                             {
                              display: flex;
@@ -1050,8 +1046,16 @@ body{
                                     flex-flow: column-reverse;
                                     width: .7rem;
                                     height: 17rem;
+                                    transition:all .2s linear;
+                                    animation: grow .8s ease-in-out;
                                 }
-                           
+                                @keyframes grow {
+                                    0%
+                                    {
+                                        height: 0rem;
+                                    }
+                                    
+                                }
                             } 
     
                 }
